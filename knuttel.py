@@ -2,6 +2,8 @@ from SPARQLWrapper import SPARQLWrapper, JSON
 from Levenshtein import ratio
 import math
 
+print "@prefix owl: <http://www.w3.org/2002/07/owl#> ."
+
 sparql = SPARQLWrapper("http://ops.few.vu.nl:8890/world")
 sparql.setQuery("""
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
@@ -21,9 +23,9 @@ OPTIONAL {
 """)
 
 sparql.setReturnFormat(JSON)
-print 'Launching SPARQL query...'
+# print 'Launching SPARQL query...'
 resultsKnuttel = sparql.query().convert()
-print 'Done.'
+# print 'Done.'
 
 sparql = SPARQLWrapper("http://ops.few.vu.nl:8890/world")
 sparql.setQuery("""
@@ -48,34 +50,61 @@ OPTIONAL {
 """)
 
 sparql.setReturnFormat(JSON)
-print 'Launching SPARQL query...'
+# print 'Launching SPARQL query...'
 resultsSTCN = sparql.query().convert()
-print 'Done.'
+# print 'Done.'
 
-print 'Computing similarities, {} x {} pairs...'.format(resultsKnuttel, resultsSTCN)
+# print 'Computing similarities, {} x {} pairs...'.format(resultsKnuttel, resultsSTCN)
 for y in resultsKnuttel["results"]["bindings"]:
     for x in resultsSTCN["results"]["bindings"]:
-        try:
+        if "title" in x:
             x_title = x["title"]["value"].encode('utf8')
-            y_title = y["title"]["value"].encode('utf8')
+        else:
+            x_title = ""
+        if "author" in x:
             x_author = x["author"]["value"].encode('utf8')
-            y_author = y["author"]["value"].encode('utf8')
-            y_publisher = y["publisher"]["value"].encode('utf8')
+        else:
+            x_author = ""
+        if "publisher" in x:
             x_publisher = "".join(x["publisher"]["value"].encode('utf8').split(',')[:-1])
-        except KeyError:
-            pass
-        try:
-            x_year = int(x["year"]["value"].encode('utf8'))
-            y_year = int(float(y["year"]["value"].encode('utf8')))
-        except ValueError:
-            pass
+        else:
+            x_publisher = ""
+        if "year" in x:
+            try:
+                x_year = int(x["year"]["value"].encode('utf8'))
+            except ValueError:
+                x_year = 0
+        else:
+            x_year = 0
+        if "title" in y:
+            y_title = y["title"]["value"].encode('utf8')
+        else:
+            y_title = ""
+        if "author" in y:
+            y_author = y["author"]["value"].encode('utf8')
+        else:
+            y_author = ""
+        if "publisher" in y:
+            y_publisher = y["publisher"]["value"].encode('utf8')
+        else:
+            y_author = ""
+        if "year" in y:
+            try:
+                y_year = int(float(y["year"]["value"].encode('utf8')))
+            except ValueError:
+                y_year = 0
+        else:
+            y_year = 0
         if '(' in x["author"]["value"]:
             x_author = x["author"]["value"].encode('utf8').split('(')[0]
-        diff_year = math.fabs(x_year - y_year)
-        if diff_year < 5:
-            r_year = 1
-        else:
+        if x_year == 0 or y_year == 0:
             r_year = 0
+        else:
+            diff_year = math.fabs(x_year - y_year)
+            if diff_year < 5:
+                r_year = 1
+            else:
+                r_year = 0
         r_title = ratio(x_title,
                         y_title)
         r_author = ratio(x_author,
@@ -83,9 +112,10 @@ for y in resultsKnuttel["results"]["bindings"]:
         r_publisher = ratio(x_publisher,
                             y_publisher)
         r = r_title + r_author + r_publisher + r_year
-        if r > 3:
+        if r > 1:
             #issue the mapping
-            print x_title, x_author, x_publisher, x_year
-            print y_title, y_author, y_publisher, y_year
-            print x["s"]["value"], ",", y["p"]["value"], ",", "Match with ratio", r
-print 'Done.'
+            #print x_title, x_author, x_publisher, x_year
+            #print y_title, y_author, y_publisher, y_year
+            if "s" in x and "p" in y:
+                print x["s"]["value"], "owl:sameAs", y["p"]["value"], "."
+# print 'Done.'
