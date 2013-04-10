@@ -111,11 +111,14 @@ for y in resultsKnuttel["results"]["bindings"]:
                          y_author)
         r_publisher = ratio(x_publisher,
                             y_publisher)
-        r = r_title + r_author + r_publisher + r_year
-        if r > 1:
+        r = r_title*3 + r_author + r_publisher + r_year
+        #print x["p"]["value"], y["s"]["value"], r_title, r_author, r_publisher, r_year, r
+        if r > 4.5:
             #issue the mapping
             #print x_title, x_author, x_publisher, x_year
             #print y_title, y_author, y_publisher, y_year
-            if "s" in x and "p" in y:
-                print x["s"]["value"], "owl:sameAs", y["p"]["value"], "."
+            print x["p"]["value"], "owl:sameAs", y["s"]["value"], "."
+            print x["title"]["value"].encode("utf8"), x["author"]["value"].encode("utf8"), x["publisher"]["value"].encode("utf8"), x["year"]["value"].encode("utf8")
+            print y["title"]["value"].encode("utf8"), y["author"]["value"].encode("utf8"), y["publisher"]["value"].encode("utf8"), y["year"]["value"].encode("utf8")
+            
 # print 'Done.'
