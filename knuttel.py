@@ -10,7 +10,7 @@ PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX stcn: <http://stcn.data2semantics.org/vocab/>
 
-SELECT ?title ?author ?publisher ?year ?s
+SELECT DISTINCT ?title ?author ?publisher ?year ?s
 FROM <http://knuttel.data2semantics.org>
 WHERE {
 ?s dc:title ?title .
@@ -33,7 +33,7 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX vocab: <http://stcn.data2semantics.org/vocab/resource/>
 
-SELECT ?title ?author ?publisher ?year ?p
+SELECT DISTINCT ?title ?author ?publisher ?year ?p
 FROM <http://stcn.data2semantics.org> 
 WHERE {
 ?p rdf:type vocab:Publicatie ;
@@ -56,6 +56,27 @@ resultsSTCN = sparql.query().convert()
 
 # print 'Computing similarities, {} x {} pairs...'.format(resultsKnuttel, resultsSTCN)
 for y in resultsKnuttel["results"]["bindings"]:
+    if "title" in y:
+        y_title = y["title"]["value"].encode('utf8')
+    else:
+        y_title = ""
+    if "author" in y:
+        y_author = y["author"]["value"].encode('utf8')
+    else:
+        y_author = ""
+    if "publisher" in y:
+        y_publisher = y["publisher"]["value"].encode('utf8')
+    else:
+        y_author = ""
+    if "year" in y:
+        try:
+            y_year = int(float(y["year"]["value"].encode('utf8')))
+        except ValueError:
+            y_year = 0
+    else:
+        y_year = 0
+    max_r = 0
+    max_sim = ''
     for x in resultsSTCN["results"]["bindings"]:
         if "title" in x:
             x_title = x["title"]["value"].encode('utf8')
@@ -76,25 +97,7 @@ for y in resultsKnuttel["results"]["bindings"]:
                 x_year = 0
         else:
             x_year = 0
-        if "title" in y:
-            y_title = y["title"]["value"].encode('utf8')
-        else:
-            y_title = ""
-        if "author" in y:
-            y_author = y["author"]["value"].encode('utf8')
-        else:
-            y_author = ""
-        if "publisher" in y:
-            y_publisher = y["publisher"]["value"].encode('utf8')
-        else:
-            y_author = ""
-        if "year" in y:
-            try:
-                y_year = int(float(y["year"]["value"].encode('utf8')))
-            except ValueError:
-                y_year = 0
-        else:
-            y_year = 0
+
         if '(' in x["author"]["value"]:
             x_author = x["author"]["value"].encode('utf8').split('(')[0]
         if x_year == 0 or y_year == 0:
@@ -111,14 +114,12 @@ for y in resultsKnuttel["results"]["bindings"]:
                          y_author)
         r_publisher = ratio(x_publisher,
                             y_publisher)
-        r = r_title*3 + r_author + r_publisher + r_year
+        r = r_title*4 + r_author + r_publisher + r_year
         #print x["p"]["value"], y["s"]["value"], r_title, r_author, r_publisher, r_year, r
-        if r > 4.5:
-            #issue the mapping
-            #print x_title, x_author, x_publisher, x_year
-            #print y_title, y_author, y_publisher, y_year
-            print x["p"]["value"], "owl:sameAs", y["s"]["value"], "."
-            print x["title"]["value"].encode("utf8"), x["author"]["value"].encode("utf8"), x["publisher"]["value"].encode("utf8"), x["year"]["value"].encode("utf8")
-            print y["title"]["value"].encode("utf8"), y["author"]["value"].encode("utf8"), y["publisher"]["value"].encode("utf8"), y["year"]["value"].encode("utf8")
+        if r > 4 and r > max_r:
+            max_r = r
+            max_sim = x["p"]["value"]
+    print y["s"]["value"], "owl:sameAs", max_sim, "."
+
             
 # print 'Done.'
