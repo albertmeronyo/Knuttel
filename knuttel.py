@@ -116,7 +116,7 @@ for y in resultsKnuttel["results"]["bindings"]:
                             y_publisher)
         r = r_title*4 + r_author + r_publisher + r_year
         #print x["p"]["value"], y["s"]["value"], r_title, r_author, r_publisher, r_year, r
-        if r > 4 and r > max_r:
+        if r > 3 and r > max_r:
             max_r = r
             max_sim = x["p"]["value"]
     print y["s"]["value"], "owl:sameAs", max_sim, "."
