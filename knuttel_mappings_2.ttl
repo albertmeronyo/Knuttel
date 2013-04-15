@@ -1,0 +1,448 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+http://knuttel.data2semantics.org/data/1 owl:sameAs http://stcn.data2semantics.org/publicatie/036010030 .
+http://knuttel.data2semantics.org/data/10 owl:sameAs http://stcn.data2semantics.org/publicatie/036010030 .
+http://knuttel.data2semantics.org/data/100 owl:sameAs http://stcn.data2semantics.org/publicatie/036012750 .
+http://knuttel.data2semantics.org/data/107 owl:sameAs http://stcn.data2semantics.org/publicatie/036010030 .
+http://knuttel.data2semantics.org/data/112 owl:sameAs http://stcn.data2semantics.org/publicatie/036010154 .
+http://knuttel.data2semantics.org/data/114 owl:sameAs http://stcn.data2semantics.org/publicatie/036012750 .
+http://knuttel.data2semantics.org/data/115 owl:sameAs http://stcn.data2semantics.org/publicatie/036008109 .
+http://knuttel.data2semantics.org/data/117 owl:sameAs http://stcn.data2semantics.org/publicatie/03602113X .
+http://knuttel.data2semantics.org/data/120 owl:sameAs http://stcn.data2semantics.org/publicatie/036009482 .
+http://knuttel.data2semantics.org/data/121 owl:sameAs http://stcn.data2semantics.org/publicatie/036009482 .
+http://knuttel.data2semantics.org/data/122 owl:sameAs http://stcn.data2semantics.org/publicatie/036008109 .
+http://knuttel.data2semantics.org/data/125 owl:sameAs http://stcn.data2semantics.org/publicatie/036008109 .
+http://knuttel.data2semantics.org/data/126 owl:sameAs http://stcn.data2semantics.org/publicatie/036008109 .
+http://knuttel.data2semantics.org/data/132 owl:sameAs http://stcn.data2semantics.org/publicatie/036009482 .
+http://knuttel.data2semantics.org/data/134 owl:sameAs http://stcn.data2semantics.org/publicatie/036010030 .
+http://knuttel.data2semantics.org/data/136 owl:sameAs http://stcn.data2semantics.org/publicatie/036010030 .
+http://knuttel.data2semantics.org/data/138 owl:sameAs http://stcn.data2semantics.org/publicatie/036010030 .
+http://knuttel.data2semantics.org/data/139 owl:sameAs http://stcn.data2semantics.org/publicatie/036008109 .
+http://knuttel.data2semantics.org/data/142 owl:sameAs http://stcn.data2semantics.org/publicatie/036008109 .
+http://knuttel.data2semantics.org/data/152 owl:sameAs http://stcn.data2semantics.org/publicatie/036008109 .
+http://knuttel.data2semantics.org/data/153 owl:sameAs http://stcn.data2semantics.org/publicatie/036008109 .
+http://knuttel.data2semantics.org/data/156 owl:sameAs http://stcn.data2semantics.org/publicatie/036008109 .
+http://knuttel.data2semantics.org/data/159 owl:sameAs http://stcn.data2semantics.org/publicatie/036009482 .
+http://knuttel.data2semantics.org/data/165 owl:sameAs http://stcn.data2semantics.org/publicatie/036010030 .
+http://knuttel.data2semantics.org/data/166 owl:sameAs http://stcn.data2semantics.org/publicatie/036008109 .
+http://knuttel.data2semantics.org/data/170 owl:sameAs http://stcn.data2semantics.org/publicatie/03602113X .
+http://knuttel.data2semantics.org/data/182 owl:sameAs http://stcn.data2semantics.org/publicatie/036010030 .
+http://knuttel.data2semantics.org/data/186 owl:sameAs http://stcn.data2semantics.org/publicatie/036008109 .
+http://knuttel.data2semantics.org/data/190 owl:sameAs http://stcn.data2semantics.org/publicatie/036009482 .
+http://knuttel.data2semantics.org/data/192 owl:sameAs http://stcn.data2semantics.org/publicatie/036008109 .
+http://knuttel.data2semantics.org/data/193 owl:sameAs http://stcn.data2semantics.org/publicatie/036008109 .
+http://knuttel.data2semantics.org/data/194 owl:sameAs http://stcn.data2semantics.org/publicatie/036010030 .
+http://knuttel.data2semantics.org/data/198 owl:sameAs http://stcn.data2semantics.org/publicatie/036008109 .
+http://knuttel.data2semantics.org/data/199 owl:sameAs http://stcn.data2semantics.org/publicatie/036008109 .
+http://knuttel.data2semantics.org/data/2 owl:sameAs http://stcn.data2semantics.org/publicatie/036008109 .
+http://knuttel.data2semantics.org/data/210 owl:sameAs http://stcn.data2semantics.org/publicatie/036008109 .
+http://knuttel.data2semantics.org/data/213 owl:sameAs http://stcn.data2semantics.org/publicatie/036012505 .
+http://knuttel.data2semantics.org/data/216 owl:sameAs http://stcn.data2semantics.org/publicatie/036009482 .
+http://knuttel.data2semantics.org/data/217 owl:sameAs http://stcn.data2semantics.org/publicatie/036009822 .
+http://knuttel.data2semantics.org/data/218 owl:sameAs http://stcn.data2semantics.org/publicatie/036012750 .
+http://knuttel.data2semantics.org/data/225 owl:sameAs http://stcn.data2semantics.org/publicatie/036008109 .
+http://knuttel.data2semantics.org/data/230 owl:sameAs http://stcn.data2semantics.org/publicatie/036012750 .
+http://knuttel.data2semantics.org/data/231 owl:sameAs http://stcn.data2semantics.org/publicatie/036009482 .
+http://knuttel.data2semantics.org/data/241 owl:sameAs  .
+http://knuttel.data2semantics.org/data/243 owl:sameAs http://stcn.data2semantics.org/publicatie/036009482 .
+http://knuttel.data2semantics.org/data/245 owl:sameAs http://stcn.data2semantics.org/publicatie/03602113X .
+http://knuttel.data2semantics.org/data/25 owl:sameAs http://stcn.data2semantics.org/publicatie/036008109 .
+http://knuttel.data2semantics.org/data/253 owl:sameAs http://stcn.data2semantics.org/publicatie/036010030 .
+http://knuttel.data2semantics.org/data/254 owl:sameAs http://stcn.data2semantics.org/publicatie/03602113X .
+http://knuttel.data2semantics.org/data/260 owl:sameAs http://stcn.data2semantics.org/publicatie/036012505 .
+http://knuttel.data2semantics.org/data/274 owl:sameAs  .
+http://knuttel.data2semantics.org/data/276 owl:sameAs http://stcn.data2semantics.org/publicatie/036012750 .
+http://knuttel.data2semantics.org/data/279 owl:sameAs http://stcn.data2semantics.org/publicatie/036012750 .
+http://knuttel.data2semantics.org/data/282 owl:sameAs http://stcn.data2semantics.org/publicatie/036008109 .
+http://knuttel.data2semantics.org/data/296 owl:sameAs http://stcn.data2semantics.org/publicatie/036008109 .
+http://knuttel.data2semantics.org/data/297 owl:sameAs http://stcn.data2semantics.org/publicatie/036020915 .
+http://knuttel.data2semantics.org/data/299 owl:sameAs http://stcn.data2semantics.org/publicatie/036010030 .
+http://knuttel.data2semantics.org/data/3 owl:sameAs http://stcn.data2semantics.org/publicatie/036010030 .
+http://knuttel.data2semantics.org/data/306 owl:sameAs http://stcn.data2semantics.org/publicatie/036010154 .
+http://knuttel.data2semantics.org/data/307 owl:sameAs  .
+http://knuttel.data2semantics.org/data/312 owl:sameAs http://stcn.data2semantics.org/publicatie/036009822 .
+http://knuttel.data2semantics.org/data/315 owl:sameAs http://stcn.data2semantics.org/publicatie/036012750 .
+http://knuttel.data2semantics.org/data/318 owl:sameAs http://stcn.data2semantics.org/publicatie/036008109 .
+http://knuttel.data2semantics.org/data/319 owl:sameAs http://stcn.data2semantics.org/publicatie/036009482 .
+http://knuttel.data2semantics.org/data/325 owl:sameAs http://stcn.data2semantics.org/publicatie/036009482 .
+http://knuttel.data2semantics.org/data/328 owl:sameAs http://stcn.data2semantics.org/publicatie/036008109 .
+http://knuttel.data2semantics.org/data/33 owl:sameAs http://stcn.data2semantics.org/publicatie/036010294 .
+http://knuttel.data2semantics.org/data/333 owl:sameAs http://stcn.data2semantics.org/publicatie/036008109 .
+http://knuttel.data2semantics.org/data/336 owl:sameAs http://stcn.data2semantics.org/publicatie/036009482 .
+http://knuttel.data2semantics.org/data/337 owl:sameAs http://stcn.data2semantics.org/publicatie/036009482 .
+http://knuttel.data2semantics.org/data/35 owl:sameAs http://stcn.data2semantics.org/publicatie/03602113X .
+http://knuttel.data2semantics.org/data/352 owl:sameAs  .
+http://knuttel.data2semantics.org/data/354 owl:sameAs  .
+http://knuttel.data2semantics.org/data/36 owl:sameAs http://stcn.data2semantics.org/publicatie/036008109 .
+http://knuttel.data2semantics.org/data/363 owl:sameAs http://stcn.data2semantics.org/publicatie/036008109 .
+http://knuttel.data2semantics.org/data/377 owl:sameAs http://stcn.data2semantics.org/publicatie/036008109 .
+http://knuttel.data2semantics.org/data/379 owl:sameAs http://stcn.data2semantics.org/publicatie/036008109 .
+http://knuttel.data2semantics.org/data/381 owl:sameAs http://stcn.data2semantics.org/publicatie/036010294 .
+http://knuttel.data2semantics.org/data/382 owl:sameAs http://stcn.data2semantics.org/publicatie/036008109 .
+http://knuttel.data2semantics.org/data/383 owl:sameAs http://stcn.data2semantics.org/publicatie/036012750 .
+http://knuttel.data2semantics.org/data/388 owl:sameAs http://stcn.data2semantics.org/publicatie/036009482 .
+http://knuttel.data2semantics.org/data/394 owl:sameAs http://stcn.data2semantics.org/publicatie/036008109 .
+http://knuttel.data2semantics.org/data/395 owl:sameAs http://stcn.data2semantics.org/publicatie/036009482 .
+http://knuttel.data2semantics.org/data/400 owl:sameAs http://stcn.data2semantics.org/publicatie/036008109 .
+http://knuttel.data2semantics.org/data/41 owl:sameAs  .
+http://knuttel.data2semantics.org/data/414 owl:sameAs http://stcn.data2semantics.org/publicatie/036012750 .
+http://knuttel.data2semantics.org/data/416 owl:sameAs  .
+http://knuttel.data2semantics.org/data/42 owl:sameAs http://stcn.data2semantics.org/publicatie/036010030 .
+http://knuttel.data2semantics.org/data/422 owl:sameAs http://stcn.data2semantics.org/publicatie/036012750 .
+http://knuttel.data2semantics.org/data/425 owl:sameAs http://stcn.data2semantics.org/publicatie/036008109 .
+http://knuttel.data2semantics.org/data/43 owl:sameAs http://stcn.data2semantics.org/publicatie/036008109 .
+http://knuttel.data2semantics.org/data/44 owl:sameAs http://stcn.data2semantics.org/publicatie/036012505 .
+http://knuttel.data2semantics.org/data/50 owl:sameAs http://stcn.data2semantics.org/publicatie/036010464 .
+http://knuttel.data2semantics.org/data/51 owl:sameAs http://stcn.data2semantics.org/publicatie/036009822 .
+http://knuttel.data2semantics.org/data/59 owl:sameAs  .
+http://knuttel.data2semantics.org/data/61 owl:sameAs  .
+http://knuttel.data2semantics.org/data/65 owl:sameAs http://stcn.data2semantics.org/publicatie/036010030 .
+http://knuttel.data2semantics.org/data/87 owl:sameAs http://stcn.data2semantics.org/publicatie/036008109 .
+http://knuttel.data2semantics.org/data/89 owl:sameAs http://stcn.data2semantics.org/publicatie/036008109 .
+http://knuttel.data2semantics.org/data/92 owl:sameAs http://stcn.data2semantics.org/publicatie/036008109 .
+http://knuttel.data2semantics.org/data/99 owl:sameAs http://stcn.data2semantics.org/publicatie/036020915 .
+http://knuttel.data2semantics.org/data/313 owl:sameAs  .
+http://knuttel.data2semantics.org/data/34 owl:sameAs  .
+http://knuttel.data2semantics.org/data/17 owl:sameAs  .
+http://knuttel.data2semantics.org/data/167 owl:sameAs  .
+http://knuttel.data2semantics.org/data/108 owl:sameAs  .
+http://knuttel.data2semantics.org/data/284 owl:sameAs  .
+http://knuttel.data2semantics.org/data/77 owl:sameAs  .
+http://knuttel.data2semantics.org/data/150 owl:sameAs  .
+http://knuttel.data2semantics.org/data/357 owl:sameAs  .
+http://knuttel.data2semantics.org/data/266 owl:sameAs  .
+http://knuttel.data2semantics.org/data/433 owl:sameAs  .
+http://knuttel.data2semantics.org/data/402 owl:sameAs  .
+http://knuttel.data2semantics.org/data/235 owl:sameAs  .
+http://knuttel.data2semantics.org/data/443 owl:sameAs  .
+http://knuttel.data2semantics.org/data/370 owl:sameAs  .
+http://knuttel.data2semantics.org/data/215 owl:sameAs  .
+http://knuttel.data2semantics.org/data/188 owl:sameAs  .
+http://knuttel.data2semantics.org/data/261 owl:sameAs  .
+http://knuttel.data2semantics.org/data/262 owl:sameAs  .
+http://knuttel.data2semantics.org/data/56 owl:sameAs  .
+http://knuttel.data2semantics.org/data/207 owl:sameAs  .
+http://knuttel.data2semantics.org/data/367 owl:sameAs  .
+http://knuttel.data2semantics.org/data/247 owl:sameAs  .
+http://knuttel.data2semantics.org/data/24 owl:sameAs  .
+http://knuttel.data2semantics.org/data/30 owl:sameAs  .
+http://knuttel.data2semantics.org/data/366 owl:sameAs  .
+http://knuttel.data2semantics.org/data/356 owl:sameAs  .
+http://knuttel.data2semantics.org/data/66 owl:sameAs  .
+http://knuttel.data2semantics.org/data/200 owl:sameAs  .
+http://knuttel.data2semantics.org/data/353 owl:sameAs  .
+http://knuttel.data2semantics.org/data/351 owl:sameAs  .
+http://knuttel.data2semantics.org/data/420 owl:sameAs  .
+http://knuttel.data2semantics.org/data/6 owl:sameAs  .
+http://knuttel.data2semantics.org/data/93 owl:sameAs  .
+http://knuttel.data2semantics.org/data/5 owl:sameAs  .
+http://knuttel.data2semantics.org/data/211 owl:sameAs  .
+http://knuttel.data2semantics.org/data/289 owl:sameAs  .
+http://knuttel.data2semantics.org/data/163 owl:sameAs  .
+http://knuttel.data2semantics.org/data/162 owl:sameAs  .
+http://knuttel.data2semantics.org/data/124 owl:sameAs  .
+http://knuttel.data2semantics.org/data/171 owl:sameAs  .
+http://knuttel.data2semantics.org/data/176 owl:sameAs  .
+http://knuttel.data2semantics.org/data/179 owl:sameAs  .
+http://knuttel.data2semantics.org/data/7 owl:sameAs  .
+http://knuttel.data2semantics.org/data/185 owl:sameAs  .
+http://knuttel.data2semantics.org/data/259 owl:sameAs  .
+http://knuttel.data2semantics.org/data/83 owl:sameAs  .
+http://knuttel.data2semantics.org/data/222 owl:sameAs  .
+http://knuttel.data2semantics.org/data/311 owl:sameAs  .
+http://knuttel.data2semantics.org/data/301 owl:sameAs  .
+http://knuttel.data2semantics.org/data/303 owl:sameAs  .
+http://knuttel.data2semantics.org/data/96 owl:sameAs  .
+http://knuttel.data2semantics.org/data/197 owl:sameAs  .
+http://knuttel.data2semantics.org/data/446 owl:sameAs  .
+http://knuttel.data2semantics.org/data/380 owl:sameAs  .
+http://knuttel.data2semantics.org/data/82 owl:sameAs  .
+http://knuttel.data2semantics.org/data/430 owl:sameAs  .
+http://knuttel.data2semantics.org/data/127 owl:sameAs  .
+http://knuttel.data2semantics.org/data/423 owl:sameAs  .
+http://knuttel.data2semantics.org/data/74 owl:sameAs  .
+http://knuttel.data2semantics.org/data/389 owl:sameAs  .
+http://knuttel.data2semantics.org/data/251 owl:sameAs  .
+http://knuttel.data2semantics.org/data/91 owl:sameAs  .
+http://knuttel.data2semantics.org/data/228 owl:sameAs  .
+http://knuttel.data2semantics.org/data/338 owl:sameAs  .
+http://knuttel.data2semantics.org/data/146 owl:sameAs  .
+http://knuttel.data2semantics.org/data/364 owl:sameAs  .
+http://knuttel.data2semantics.org/data/339 owl:sameAs  .
+http://knuttel.data2semantics.org/data/264 owl:sameAs  .
+http://knuttel.data2semantics.org/data/271 owl:sameAs  .
+http://knuttel.data2semantics.org/data/119 owl:sameAs  .
+http://knuttel.data2semantics.org/data/426 owl:sameAs  .
+http://knuttel.data2semantics.org/data/255 owl:sameAs  .
+http://knuttel.data2semantics.org/data/286 owl:sameAs  .
+http://knuttel.data2semantics.org/data/432 owl:sameAs  .
+http://knuttel.data2semantics.org/data/201 owl:sameAs  .
+http://knuttel.data2semantics.org/data/275 owl:sameAs  .
+http://knuttel.data2semantics.org/data/368 owl:sameAs  .
+http://knuttel.data2semantics.org/data/392 owl:sameAs  .
+http://knuttel.data2semantics.org/data/81 owl:sameAs  .
+http://knuttel.data2semantics.org/data/421 owl:sameAs  .
+http://knuttel.data2semantics.org/data/0 owl:sameAs  .
+http://knuttel.data2semantics.org/data/13 owl:sameAs  .
+http://knuttel.data2semantics.org/data/26 owl:sameAs  .
+http://knuttel.data2semantics.org/data/413 owl:sameAs  .
+http://knuttel.data2semantics.org/data/49 owl:sameAs  .
+http://knuttel.data2semantics.org/data/291 owl:sameAs  .
+http://knuttel.data2semantics.org/data/62 owl:sameAs  .
+http://knuttel.data2semantics.org/data/39 owl:sameAs  .
+http://knuttel.data2semantics.org/data/88 owl:sameAs  .
+http://knuttel.data2semantics.org/data/52 owl:sameAs  .
+http://knuttel.data2semantics.org/data/45 owl:sameAs  .
+http://knuttel.data2semantics.org/data/267 owl:sameAs  .
+http://knuttel.data2semantics.org/data/375 owl:sameAs  .
+http://knuttel.data2semantics.org/data/321 owl:sameAs  .
+http://knuttel.data2semantics.org/data/304 owl:sameAs  .
+http://knuttel.data2semantics.org/data/183 owl:sameAs  .
+http://knuttel.data2semantics.org/data/8 owl:sameAs  .
+http://knuttel.data2semantics.org/data/168 owl:sameAs  .
+http://knuttel.data2semantics.org/data/437 owl:sameAs  .
+http://knuttel.data2semantics.org/data/221 owl:sameAs  .
+http://knuttel.data2semantics.org/data/118 owl:sameAs  .
+http://knuttel.data2semantics.org/data/436 owl:sameAs  .
+http://knuttel.data2semantics.org/data/105 owl:sameAs  .
+http://knuttel.data2semantics.org/data/371 owl:sameAs  .
+http://knuttel.data2semantics.org/data/326 owl:sameAs  .
+http://knuttel.data2semantics.org/data/316 owl:sameAs  .
+http://knuttel.data2semantics.org/data/147 owl:sameAs  .
+http://knuttel.data2semantics.org/data/340 owl:sameAs  .
+http://knuttel.data2semantics.org/data/12 owl:sameAs  .
+http://knuttel.data2semantics.org/data/418 owl:sameAs  .
+http://knuttel.data2semantics.org/data/172 owl:sameAs  .
+http://knuttel.data2semantics.org/data/175 owl:sameAs  .
+http://knuttel.data2semantics.org/data/177 owl:sameAs  .
+http://knuttel.data2semantics.org/data/320 owl:sameAs  .
+http://knuttel.data2semantics.org/data/131 owl:sameAs  .
+http://knuttel.data2semantics.org/data/205 owl:sameAs  .
+http://knuttel.data2semantics.org/data/128 owl:sameAs  .
+http://knuttel.data2semantics.org/data/113 owl:sameAs  .
+http://knuttel.data2semantics.org/data/272 owl:sameAs  .
+http://knuttel.data2semantics.org/data/240 owl:sameAs  .
+http://knuttel.data2semantics.org/data/11 owl:sameAs  .
+http://knuttel.data2semantics.org/data/212 owl:sameAs  .
+http://knuttel.data2semantics.org/data/227 owl:sameAs  .
+http://knuttel.data2semantics.org/data/233 owl:sameAs  .
+http://knuttel.data2semantics.org/data/244 owl:sameAs  .
+http://knuttel.data2semantics.org/data/23 owl:sameAs  .
+http://knuttel.data2semantics.org/data/258 owl:sameAs  .
+http://knuttel.data2semantics.org/data/263 owl:sameAs  .
+http://knuttel.data2semantics.org/data/317 owl:sameAs  .
+http://knuttel.data2semantics.org/data/111 owl:sameAs  .
+http://knuttel.data2semantics.org/data/268 owl:sameAs  .
+http://knuttel.data2semantics.org/data/102 owl:sameAs  .
+http://knuttel.data2semantics.org/data/187 owl:sameAs  .
+http://knuttel.data2semantics.org/data/397 owl:sameAs  .
+http://knuttel.data2semantics.org/data/130 owl:sameAs  .
+http://knuttel.data2semantics.org/data/445 owl:sameAs  .
+http://knuttel.data2semantics.org/data/305 owl:sameAs  .
+http://knuttel.data2semantics.org/data/277 owl:sameAs  .
+http://knuttel.data2semantics.org/data/287 owl:sameAs  .
+http://knuttel.data2semantics.org/data/292 owl:sameAs  .
+http://knuttel.data2semantics.org/data/28 owl:sameAs  .
+http://knuttel.data2semantics.org/data/343 owl:sameAs  .
+http://knuttel.data2semantics.org/data/310 owl:sameAs  .
+http://knuttel.data2semantics.org/data/435 owl:sameAs  .
+http://knuttel.data2semantics.org/data/434 owl:sameAs  .
+http://knuttel.data2semantics.org/data/98 owl:sameAs  .
+http://knuttel.data2semantics.org/data/349 owl:sameAs  .
+http://knuttel.data2semantics.org/data/359 owl:sameAs  .
+http://knuttel.data2semantics.org/data/369 owl:sameAs  .
+http://knuttel.data2semantics.org/data/252 owl:sameAs  .
+http://knuttel.data2semantics.org/data/283 owl:sameAs  .
+http://knuttel.data2semantics.org/data/390 owl:sameAs  .
+http://knuttel.data2semantics.org/data/391 owl:sameAs  .
+http://knuttel.data2semantics.org/data/116 owl:sameAs  .
+http://knuttel.data2semantics.org/data/439 owl:sameAs  .
+http://knuttel.data2semantics.org/data/20 owl:sameAs  .
+http://knuttel.data2semantics.org/data/149 owl:sameAs  .
+http://knuttel.data2semantics.org/data/97 owl:sameAs  .
+http://knuttel.data2semantics.org/data/80 owl:sameAs  .
+http://knuttel.data2semantics.org/data/309 owl:sameAs  .
+http://knuttel.data2semantics.org/data/314 owl:sameAs  .
+http://knuttel.data2semantics.org/data/54 owl:sameAs  .
+http://knuttel.data2semantics.org/data/238 owl:sameAs  .
+http://knuttel.data2semantics.org/data/417 owl:sameAs  .
+http://knuttel.data2semantics.org/data/329 owl:sameAs  .
+http://knuttel.data2semantics.org/data/123 owl:sameAs  .
+http://knuttel.data2semantics.org/data/208 owl:sameAs  .
+http://knuttel.data2semantics.org/data/85 owl:sameAs  .
+http://knuttel.data2semantics.org/data/94 owl:sameAs  .
+http://knuttel.data2semantics.org/data/174 owl:sameAs  .
+http://knuttel.data2semantics.org/data/202 owl:sameAs  .
+http://knuttel.data2semantics.org/data/360 owl:sameAs  .
+http://knuttel.data2semantics.org/data/438 owl:sameAs  .
+http://knuttel.data2semantics.org/data/169 owl:sameAs  .
+http://knuttel.data2semantics.org/data/308 owl:sameAs  .
+http://knuttel.data2semantics.org/data/323 owl:sameAs  .
+http://knuttel.data2semantics.org/data/265 owl:sameAs  .
+http://knuttel.data2semantics.org/data/72 owl:sameAs  .
+http://knuttel.data2semantics.org/data/70 owl:sameAs  .
+http://knuttel.data2semantics.org/data/411 owl:sameAs  .
+http://knuttel.data2semantics.org/data/15 owl:sameAs  .
+http://knuttel.data2semantics.org/data/32 owl:sameAs  .
+http://knuttel.data2semantics.org/data/344 owl:sameAs  .
+http://knuttel.data2semantics.org/data/145 owl:sameAs  .
+http://knuttel.data2semantics.org/data/293 owl:sameAs  .
+http://knuttel.data2semantics.org/data/75 owl:sameAs  .
+http://knuttel.data2semantics.org/data/224 owl:sameAs  .
+http://knuttel.data2semantics.org/data/270 owl:sameAs  .
+http://knuttel.data2semantics.org/data/57 owl:sameAs  .
+http://knuttel.data2semantics.org/data/79 owl:sameAs  .
+http://knuttel.data2semantics.org/data/229 owl:sameAs  .
+http://knuttel.data2semantics.org/data/331 owl:sameAs  .
+http://knuttel.data2semantics.org/data/196 owl:sameAs  .
+http://knuttel.data2semantics.org/data/76 owl:sameAs  .
+http://knuttel.data2semantics.org/data/405 owl:sameAs  .
+http://knuttel.data2semantics.org/data/29 owl:sameAs  .
+http://knuttel.data2semantics.org/data/347 owl:sameAs  .
+http://knuttel.data2semantics.org/data/206 owl:sameAs  .
+http://knuttel.data2semantics.org/data/110 owl:sameAs  .
+http://knuttel.data2semantics.org/data/444 owl:sameAs  .
+http://knuttel.data2semantics.org/data/164 owl:sameAs  .
+http://knuttel.data2semantics.org/data/236 owl:sameAs  .
+http://knuttel.data2semantics.org/data/257 owl:sameAs  .
+http://knuttel.data2semantics.org/data/242 owl:sameAs  .
+http://knuttel.data2semantics.org/data/106 owl:sameAs  .
+http://knuttel.data2semantics.org/data/157 owl:sameAs  .
+http://knuttel.data2semantics.org/data/407 owl:sameAs  .
+http://knuttel.data2semantics.org/data/398 owl:sameAs  .
+http://knuttel.data2semantics.org/data/440 owl:sameAs  .
+http://knuttel.data2semantics.org/data/239 owl:sameAs  .
+http://knuttel.data2semantics.org/data/248 owl:sameAs  .
+http://knuttel.data2semantics.org/data/40 owl:sameAs  .
+http://knuttel.data2semantics.org/data/335 owl:sameAs  .
+http://knuttel.data2semantics.org/data/362 owl:sameAs  .
+http://knuttel.data2semantics.org/data/345 owl:sameAs  .
+http://knuttel.data2semantics.org/data/361 owl:sameAs  .
+http://knuttel.data2semantics.org/data/341 owl:sameAs  .
+http://knuttel.data2semantics.org/data/256 owl:sameAs  .
+http://knuttel.data2semantics.org/data/141 owl:sameAs  .
+http://knuttel.data2semantics.org/data/342 owl:sameAs  .
+http://knuttel.data2semantics.org/data/53 owl:sameAs  .
+http://knuttel.data2semantics.org/data/348 owl:sameAs  .
+http://knuttel.data2semantics.org/data/214 owl:sameAs  .
+http://knuttel.data2semantics.org/data/37 owl:sameAs  .
+http://knuttel.data2semantics.org/data/203 owl:sameAs  .
+http://knuttel.data2semantics.org/data/419 owl:sameAs  .
+http://knuttel.data2semantics.org/data/280 owl:sameAs  .
+http://knuttel.data2semantics.org/data/84 owl:sameAs  .
+http://knuttel.data2semantics.org/data/373 owl:sameAs  .
+http://knuttel.data2semantics.org/data/189 owl:sameAs  .
+http://knuttel.data2semantics.org/data/151 owl:sameAs  .
+http://knuttel.data2semantics.org/data/180 owl:sameAs  .
+http://knuttel.data2semantics.org/data/441 owl:sameAs  .
+http://knuttel.data2semantics.org/data/9 owl:sameAs  .
+http://knuttel.data2semantics.org/data/209 owl:sameAs  .
+http://knuttel.data2semantics.org/data/346 owl:sameAs  .
+http://knuttel.data2semantics.org/data/129 owl:sameAs  .
+http://knuttel.data2semantics.org/data/14 owl:sameAs  .
+http://knuttel.data2semantics.org/data/95 owl:sameAs  .
+http://knuttel.data2semantics.org/data/298 owl:sameAs  .
+http://knuttel.data2semantics.org/data/154 owl:sameAs  .
+http://knuttel.data2semantics.org/data/232 owl:sameAs  .
+http://knuttel.data2semantics.org/data/78 owl:sameAs  .
+http://knuttel.data2semantics.org/data/58 owl:sameAs  .
+http://knuttel.data2semantics.org/data/4 owl:sameAs  .
+http://knuttel.data2semantics.org/data/294 owl:sameAs  .
+http://knuttel.data2semantics.org/data/385 owl:sameAs  .
+http://knuttel.data2semantics.org/data/109 owl:sameAs  .
+http://knuttel.data2semantics.org/data/90 owl:sameAs  .
+http://knuttel.data2semantics.org/data/86 owl:sameAs  .
+http://knuttel.data2semantics.org/data/410 owl:sameAs  .
+http://knuttel.data2semantics.org/data/273 owl:sameAs  .
+http://knuttel.data2semantics.org/data/184 owl:sameAs  .
+http://knuttel.data2semantics.org/data/73 owl:sameAs  .
+http://knuttel.data2semantics.org/data/246 owl:sameAs  .
+http://knuttel.data2semantics.org/data/16 owl:sameAs  .
+http://knuttel.data2semantics.org/data/401 owl:sameAs  .
+http://knuttel.data2semantics.org/data/55 owl:sameAs  .
+http://knuttel.data2semantics.org/data/226 owl:sameAs  .
+http://knuttel.data2semantics.org/data/237 owl:sameAs  .
+http://knuttel.data2semantics.org/data/140 owl:sameAs  .
+http://knuttel.data2semantics.org/data/71 owl:sameAs  .
+http://knuttel.data2semantics.org/data/290 owl:sameAs  .
+http://knuttel.data2semantics.org/data/161 owl:sameAs  .
+http://knuttel.data2semantics.org/data/269 owl:sameAs  .
+http://knuttel.data2semantics.org/data/64 owl:sameAs  .
+http://knuttel.data2semantics.org/data/191 owl:sameAs  .
+http://knuttel.data2semantics.org/data/403 owl:sameAs  .
+http://knuttel.data2semantics.org/data/372 owl:sameAs  .
+http://knuttel.data2semantics.org/data/374 owl:sameAs  .
+http://knuttel.data2semantics.org/data/46 owl:sameAs  .
+http://knuttel.data2semantics.org/data/21 owl:sameAs  .
+http://knuttel.data2semantics.org/data/427 owl:sameAs  .
+http://knuttel.data2semantics.org/data/281 owl:sameAs  .
+http://knuttel.data2semantics.org/data/393 owl:sameAs  .
+http://knuttel.data2semantics.org/data/404 owl:sameAs  .
+http://knuttel.data2semantics.org/data/69 owl:sameAs  .
+http://knuttel.data2semantics.org/data/173 owl:sameAs  .
+http://knuttel.data2semantics.org/data/431 owl:sameAs  .
+http://knuttel.data2semantics.org/data/220 owl:sameAs  .
+http://knuttel.data2semantics.org/data/278 owl:sameAs  .
+http://knuttel.data2semantics.org/data/384 owl:sameAs  .
+http://knuttel.data2semantics.org/data/350 owl:sameAs  .
+http://knuttel.data2semantics.org/data/48 owl:sameAs  .
+http://knuttel.data2semantics.org/data/68 owl:sameAs  .
+http://knuttel.data2semantics.org/data/295 owl:sameAs  .
+http://knuttel.data2semantics.org/data/160 owl:sameAs  .
+http://knuttel.data2semantics.org/data/415 owl:sameAs  .
+http://knuttel.data2semantics.org/data/19 owl:sameAs  .
+http://knuttel.data2semantics.org/data/137 owl:sameAs  .
+http://knuttel.data2semantics.org/data/47 owl:sameAs  .
+http://knuttel.data2semantics.org/data/376 owl:sameAs  .
+http://knuttel.data2semantics.org/data/285 owl:sameAs  .
+http://knuttel.data2semantics.org/data/135 owl:sameAs  .
+http://knuttel.data2semantics.org/data/249 owl:sameAs  .
+http://knuttel.data2semantics.org/data/408 owl:sameAs  .
+http://knuttel.data2semantics.org/data/27 owl:sameAs  .
+http://knuttel.data2semantics.org/data/429 owl:sameAs  .
+http://knuttel.data2semantics.org/data/386 owl:sameAs  .
+http://knuttel.data2semantics.org/data/250 owl:sameAs  .
+http://knuttel.data2semantics.org/data/155 owl:sameAs  .
+http://knuttel.data2semantics.org/data/148 owl:sameAs  .
+http://knuttel.data2semantics.org/data/300 owl:sameAs  .
+http://knuttel.data2semantics.org/data/67 owl:sameAs  .
+http://knuttel.data2semantics.org/data/101 owl:sameAs  .
+http://knuttel.data2semantics.org/data/234 owl:sameAs  .
+http://knuttel.data2semantics.org/data/60 owl:sameAs  .
+http://knuttel.data2semantics.org/data/330 owl:sameAs  .
+http://knuttel.data2semantics.org/data/355 owl:sameAs  .
+http://knuttel.data2semantics.org/data/204 owl:sameAs  .
+http://knuttel.data2semantics.org/data/223 owl:sameAs  .
+http://knuttel.data2semantics.org/data/22 owl:sameAs  .
+http://knuttel.data2semantics.org/data/178 owl:sameAs  .
+http://knuttel.data2semantics.org/data/442 owl:sameAs  .
+http://knuttel.data2semantics.org/data/365 owl:sameAs  .
+http://knuttel.data2semantics.org/data/412 owl:sameAs  .
+http://knuttel.data2semantics.org/data/302 owl:sameAs  .
+http://knuttel.data2semantics.org/data/334 owl:sameAs  .
+http://knuttel.data2semantics.org/data/158 owl:sameAs  .
+http://knuttel.data2semantics.org/data/219 owl:sameAs  .
+http://knuttel.data2semantics.org/data/406 owl:sameAs  .
+http://knuttel.data2semantics.org/data/133 owl:sameAs  .
+http://knuttel.data2semantics.org/data/399 owl:sameAs  .
+http://knuttel.data2semantics.org/data/396 owl:sameAs  .
+http://knuttel.data2semantics.org/data/104 owl:sameAs  .
+http://knuttel.data2semantics.org/data/428 owl:sameAs  .
+http://knuttel.data2semantics.org/data/18 owl:sameAs  .
+http://knuttel.data2semantics.org/data/327 owl:sameAs  .
+http://knuttel.data2semantics.org/data/195 owl:sameAs  .
+http://knuttel.data2semantics.org/data/38 owl:sameAs  .
+http://knuttel.data2semantics.org/data/288 owl:sameAs  .
+http://knuttel.data2semantics.org/data/322 owl:sameAs  .
+http://knuttel.data2semantics.org/data/103 owl:sameAs  .
+http://knuttel.data2semantics.org/data/63 owl:sameAs  .
+http://knuttel.data2semantics.org/data/424 owl:sameAs  .
+http://knuttel.data2semantics.org/data/409 owl:sameAs  .
+http://knuttel.data2semantics.org/data/324 owl:sameAs  .
+http://knuttel.data2semantics.org/data/332 owl:sameAs  .
+http://knuttel.data2semantics.org/data/143 owl:sameAs  .
+http://knuttel.data2semantics.org/data/144 owl:sameAs  .
+http://knuttel.data2semantics.org/data/31 owl:sameAs  .
+http://knuttel.data2semantics.org/data/387 owl:sameAs  .
+http://knuttel.data2semantics.org/data/181 owl:sameAs  .
+http://knuttel.data2semantics.org/data/358 owl:sameAs  .
+http://knuttel.data2semantics.org/data/378 owl:sameAs  .
