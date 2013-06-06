@@ -58,11 +58,14 @@ resultsSTCN = sparql.query().convert()
 
 # print 'Computing similarities, {} x {} pairs...'.format(resultsKnuttel, resultsSTCN)
 for y in resultsKnuttel["results"]["bindings"]:
+    max_r = 0
+    close_title = ""
     for x in resultsSTCN["results"]["bindings"]:
         if "title" in y and "title" in x:
             r_title = ratio(x["title"]["value"],
                             y["title"]["value"])
             print x["title"]["value"], y["title"]["value"], r_title
-            # if r > 3 and r > max_r:
-            #     max_r = r
-            #     max_sim = x["p"]["value"]
+            if r_title > max_r:
+                max_r = r
+                close_title = y["title"]["value"]
+    print "Best match of", x["title"]["value"], "is", close_title
