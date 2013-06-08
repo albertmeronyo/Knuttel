@@ -4,9 +4,7 @@ from SPARQLWrapper import SPARQLWrapper, JSON
 from Levenshtein import ratio
 import math
 
-print "@prefix owl: <http://www.w3.org/2002/07/owl#> ."
-
-sparql = SPARQLWrapper("http://ops.few.vu.nl:8890/world")
+sparql = SPARQLWrapper("http://94.23.12.201:3030/stcn/sparql")
 sparql.setQuery("""
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
@@ -25,11 +23,10 @@ OPTIONAL {
 """)
 
 sparql.setReturnFormat(JSON)
-# print 'Launching SPARQL query...'
+print 'Launching SPARQL query...'
 resultsKnuttel = sparql.query().convert()
-# print 'Done.'
+print 'Done.'
 
-sparql = SPARQLWrapper("http://ops.few.vu.nl:8890/world")
 sparql.setQuery("""
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
@@ -52,9 +49,9 @@ OPTIONAL {
 """)
 
 sparql.setReturnFormat(JSON)
-# print 'Launching SPARQL query...'
+print 'Launching SPARQL query...'
 resultsSTCN = sparql.query().convert()
-# print 'Done.'
+print 'Done.'
 
 # print 'Computing similarities, {} x {} pairs...'.format(resultsKnuttel, resultsSTCN)
 for y in resultsKnuttel["results"]["bindings"]:
