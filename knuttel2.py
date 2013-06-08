@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python2.7
 
 from SPARQLWrapper import SPARQLWrapper, JSON
 from Levenshtein import ratio
