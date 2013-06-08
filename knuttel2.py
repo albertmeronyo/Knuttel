@@ -56,13 +56,14 @@ print 'Done.'
 # print 'Computing similarities, {} x {} pairs...'.format(resultsKnuttel, resultsSTCN)
 for y in resultsKnuttel["results"]["bindings"]:
     max_r = 0
+    knuttel_title = y["title"]["value"]
     close_title = ""
     for x in resultsSTCN["results"]["bindings"]:
-        if "title" in y and "title" in x:
-            r_title = ratio(x["title"]["value"],
-                            y["title"]["value"])
-            print x["title"]["value"], y["title"]["value"], r_title
-            if r_title > max_r:
-                max_r = r
-                close_title = y["title"]["value"]
-    print "Best match of", x["title"]["value"], "is", close_title
+        stcn_title = x["title"]["value"]
+        r_title = ratio(knuttel_title,
+                        stcn_title)
+        print knuttel_title, stcn_title, r_title
+        if r_title > max_r:
+            max_r = r
+            close_title = stcn_title
+    print "Best match of", knuttel_title, "is", close_title
