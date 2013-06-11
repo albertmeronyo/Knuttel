@@ -4,11 +4,13 @@ from SPARQLWrapper import SPARQLWrapper, JSON
 from Levenshtein import ratio
 import math
 
+print "@prefix owl: <http://www.w3.org/2002/07/owl#> ."
+
 sparql = SPARQLWrapper("http://94.23.12.201:3030/stcn/sparql")
 sparql.setQuery("""
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 
-SELECT DISTINCT ?title ?author ?publisher ?year ?s
+SELECT DISTINCT ?title ?s
 FROM <http://knuttel.data2semantics.org>
 WHERE {
 ?s dc:title ?title .
@@ -16,9 +18,9 @@ WHERE {
 """)
 
 sparql.setReturnFormat(JSON)
-print 'Launching SPARQL query...'
+# print 'Launching SPARQL query...'
 resultsKnuttel = sparql.query().convert()
-print 'Done.'
+# print 'Done.'
 
 sparql.setQuery("""
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -34,21 +36,27 @@ WHERE {
 """)
 
 sparql.setReturnFormat(JSON)
-print 'Launching SPARQL query...'
+# print 'Launching SPARQL query...'
 resultsSTCN = sparql.query().convert()
-print 'Done.'
+# print 'Done.'
 
-print "Computing similarities"
+# print "Computing similarities"
 for y in resultsKnuttel["results"]["bindings"]:
     max_r = 0
     knuttel_title = y["title"]["value"]
+    knuttel_uri = y["s"]["value"]
     close_title = ""
+    close_uri = ""
     for x in resultsSTCN["results"]["bindings"]:
         stcn_title = x["title"]["value"]
+        stcn_uri = x["p"]["value"]
         r_title = ratio(knuttel_title,
                         stcn_title)
-        print knuttel_title, stcn_title, r_title
+        # print knuttel_title, stcn_title, r_title
         if r_title > max_r:
             max_r = r_title
             close_title = stcn_title
-    print "Best match of", knuttel_title, "is", close_title
+            close_uri = stcn_uri
+    # print "Best match of", knuttel_title, "is", close_title
+    if max_r > 0.9:
+        print knuttel_uri, "owl:sameAs", close_uri
