@@ -59,4 +59,4 @@ for y in resultsWeekhout["results"]["bindings"]:
             close_uri = stcn_uri
     # print "Best match of", weekhout_title, "is", close_title
     if max_r > 0.9:
-        print weekhout_uri, "owl:sameAs", close_uri
+        print "<{}> owl:sameAs <{}>".format(weekhout_uri, close_uri)
