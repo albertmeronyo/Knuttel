@@ -59,4 +59,4 @@ for y in resultsKnuttel["results"]["bindings"]:
             close_uri = stcn_uri
     # print "Best match of", knuttel_title, "is", close_title
     if max_r > 0.9:
-        print "<{}> owl:sameAs <{}>".format(knuttel_uri, close_uri)
+        print "<{}> owl:sameAs <{}> .".format(knuttel_uri, close_uri)
