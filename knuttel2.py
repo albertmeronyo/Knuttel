@@ -49,6 +49,6 @@ for y in resultsKnuttel["results"]["bindings"]:
                         stcn_title)
         print knuttel_title, stcn_title, r_title
         if r_title > max_r:
-            max_r = r
+            max_r = r_title
             close_title = stcn_title
     print "Best match of", knuttel_title, "is", close_title
