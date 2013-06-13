@@ -3,6 +3,24 @@
 from SPARQLWrapper import SPARQLWrapper, JSON
 from Levenshtein import ratio
 import math
+import argparse
+
+def restricted_float(x):
+    x = float(x)
+    if x < 0.0 or x > 1.0:
+        raise argparse.ArgumentTypeError("%r not in range [0.0, 1.0]"%(x,))
+    return x
+
+parser = argparse.ArgumentParser()
+parser.add_argument('-t', 
+                    '--threshold', 
+                    nargs=1, 
+                    dest='t',
+                    type=restricted_float,
+                    default=[0.9], 
+                    help='Levenshtein ratio threshold')
+args = parser.parse_args()
+print args.t[0]
 
 print "@prefix owl: <http://www.w3.org/2002/07/owl#> ."
 
@@ -58,5 +76,5 @@ for y in resultsKnuttel["results"]["bindings"]:
             close_title = stcn_title
             close_uri = stcn_uri
     # print "Best match of", knuttel_title, "is", close_title
-    if max_r > 0.9:
+    if max_r > args.t[0]:
         print "<{}> owl:sameAs <{}> .".format(knuttel_uri, close_uri)
