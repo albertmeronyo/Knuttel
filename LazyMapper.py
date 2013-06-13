@@ -20,7 +20,6 @@ parser.add_argument('-t',
                     default=[0.9], 
                     help='Levenshtein ratio threshold')
 args = parser.parse_args()
-print args.t[0]
 
 print "@prefix owl: <http://www.w3.org/2002/07/owl#> ."
 
