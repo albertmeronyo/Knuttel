@@ -18,19 +18,24 @@ parser.add_argument('-t',
                     dest='t',
                     type=restricted_float,
                     default=[0.9], 
-                    help='Levenshtein ratio threshold')
+                    help='Levenshtein ratio threshold (0.9 if not specified)')
+parser.add_argument('-e',
+                    '--endpoint',
+                    nargs=1,
+                    dest='e',
+                    required=True,
+                    help='URL address of the SPARQL endpoint to query')
 args = parser.parse_args()
 
 print "@prefix owl: <http://www.w3.org/2002/07/owl#> ."
 
-sparql = SPARQLWrapper("http://94.23.12.201:3030/stcn/sparql")
-sparql.setQuery("""
-PREFIX dc: <http://purl.org/dc/elements/1.1/>
+sparql = SPARQLWrapper(args.e[0])
 
+sparql.setQuery("""
 SELECT DISTINCT ?title ?s
 FROM <http://knuttel.data2semantics.org>
 WHERE {
-?s dc:title ?title .
+?s <http://purl.org/dc/elements/1.1/title> ?title .
 }
 """)
 
@@ -40,15 +45,10 @@ resultsKnuttel = sparql.query().convert()
 # print 'Done.'
 
 sparql.setQuery("""
-PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX vocab: <http://stcn.data2semantics.org/vocab/resource/>
-
 SELECT DISTINCT ?title ?p
 FROM <http://stcn.data2semantics.org> 
 WHERE {
-?p rdf:type vocab:Publicatie ;
-            rdfs:label ?title .
+?p <http://www.w3.org/2000/01/rdf-schema#label> ?title .
 }
 """)
 
