@@ -29,6 +29,18 @@ class LMArgParser:
                                  dest='g2',
                                  required=True,
                                  help='URI of the second named graph to link')
+        self.parser.add_argument('-p1',
+                                 '--property1',
+                                 nargs=1,
+                                 dest='p1',
+                                 required=True,
+                                 help='URI of the first property to link')
+        self.parser.add_argument('-p2',
+                                 '--property2',
+                                 nargs=1,
+                                 dest='p2',
+                                 required=True,
+                                 help='URI of the second property to link')
         self.parser.add_argument('-v',
                                  '--verbose',
                                  action='store_const',

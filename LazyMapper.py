@@ -21,7 +21,7 @@ class LazyMapper:
                         SELECT DISTINCT ?title ?s
                         FROM <""" + self.ap.args.g1[0] + """>
                         WHERE {
-                        ?s <http://purl.org/dc/elements/1.1/title> ?title .
+                        ?s <""" + self.ap.args.p1[0] + """> ?title .
                         }
                         """)
         self.log.info('Launching first SPARQL query...')
@@ -31,7 +31,7 @@ class LazyMapper:
                         SELECT DISTINCT ?title ?p
                         FROM <""" + self.ap.args.g2[0] + """> 
                         WHERE {
-                        ?p <http://www.w3.org/2000/01/rdf-schema#label> ?title .
+                        ?p <""" + self.ap.args.p2[0] + """> ?title .
                         }
                         """)
         self.log.info('Launching second SPARQL query...')
