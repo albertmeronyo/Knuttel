@@ -42,13 +42,13 @@ class LODLinker:
     def doLink(self):
         self.log.info("Computing similarities...")
         print "@prefix owl: <http://www.w3.org/2002/07/owl#> ."
-        for y in resultsKnuttel["results"]["bindings"]:
+        for y in self.resultsKnuttel["results"]["bindings"]:
             max_r = 0
             knuttel_title = y["title"]["value"]
             knuttel_uri = y["s"]["value"]
             close_title = ""
             close_uri = ""
-            for x in resultsSTCN["results"]["bindings"]:
+            for x in self.resultsSTCN["results"]["bindings"]:
                 stcn_title = x["title"]["value"]
                 stcn_uri = x["p"]["value"]
                 r_title = ratio(knuttel_title,
