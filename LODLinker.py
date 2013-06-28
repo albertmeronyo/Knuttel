@@ -1,4 +1,6 @@
-#!/usr/bin/python2.7
+#!/usr/bin/env python
+
+"""LODLinker, an RDF-SPARQL dataset simple linker"""
 
 from SPARQLWrapper import SPARQLWrapper, JSON
 from Levenshtein import ratio
@@ -60,3 +62,13 @@ class LODLinker:
 
 if __name__ == '__main__':
     lm = LODLinker()
+
+__author__ = "Albert Meronyo-Penyuela"
+__copyright__ = "Copyright 2013, VU University Amsterdam"
+__credits__ = ["Albert Meronyo-Penyuela"]
+
+__license__ = "GPL"
+__version__ = "0.1"
+__maintainer__ = "Albert Meronyo-Penyuela"
+__email__ = "albert.merono@vu.nl"
+__status__ = "Prototype"
