@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/python2.7
 
 """LODLinker, an RDF-SPARQL dataset simple linker"""
 
