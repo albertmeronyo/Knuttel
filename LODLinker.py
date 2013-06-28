@@ -4,12 +4,12 @@ from SPARQLWrapper import SPARQLWrapper, JSON
 from Levenshtein import ratio
 import logging
 import math
-from LMArgParser import LMArgParser
+from LODLArgParser import LODLArgParser
 
-class LazyMapper:
+class LODLinker:
     def __init__(self):
-        self.ap = LMArgParser()
-        self.log = logging.getLogger("LazyMapper")
+        self.ap = LODLArgParser()
+        self.log = logging.getLogger("LODLinker")
         if self.ap.args.v == 1:
             logging.basicConfig(level=logging.INFO)
         self.doSPARQL()
@@ -59,4 +59,4 @@ class LazyMapper:
                 print "<{}> owl:sameAs <{}> .".format(knuttel_uri, close_uri)
 
 if __name__ == '__main__':
-    lm = LazyMapper()
+    lm = LODLinker()

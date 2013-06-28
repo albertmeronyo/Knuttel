@@ -1,6 +1,6 @@
 import argparse
 
-class LMArgParser:
+class LODLArgParser:
     def __init__(self):
         self.parser = argparse.ArgumentParser(description='A lazy SPARQL dataset linker',
                                               epilog='Happy linking!')
