@@ -1,0 +1,1 @@
+./LODLinker.py -e http://lod.cedar-project.nl:3030/stcn/sparql -g1 http://knuttel.data2semantics.org -g2 http://stcn.data2semantics.org -p1 http://purl.org/dc/elements/1.1/title -p2 http://www.w3.org/2000/01/rdf-schema#label
